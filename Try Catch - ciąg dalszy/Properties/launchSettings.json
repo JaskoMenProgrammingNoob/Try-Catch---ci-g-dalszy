@@ -2,7 +2,7 @@
   "profiles": {
     "Try Catch - ciąg dalszy": {
       "commandName": "Project",
-      "commandLineArgs": "1"
+      "commandLineArgs": "1 2 1"
     }
   }
 }

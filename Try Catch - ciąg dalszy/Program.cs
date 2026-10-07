@@ -24,15 +24,24 @@ class Program
             {
                 zapis.WriteLine("A = 0, to funkcja liniowa!" );
                 Console.WriteLine("A = 0, to funkcja liniowa!");
-                zapis.Close();
-                return;
+                
+                //zapis.Close();
+                //return;
             }
-
+            
         } catch (Exception)
         {
-            
-            Console.WriteLine("Wprowadzono niepoprawne liczby! ");
-            
+            if (args.Length < 3)
+            {
+                Console.WriteLine("Należy wprowadzić 3 liczby rzeczywiste !");
+                zapis.WriteLine("Należy wprowadzić 3 liczby rzeczywiste !");
+            }
+            else if(args.Length == 3)
+            {
+                Console.WriteLine("Wprowadzono niepoprawne liczby! ");
+                zapis.WriteLine("Wprowadzono niepoprawne liczby! ");
+            }
+            zapis.Close();
             return;
         }
         Console.WriteLine("Wprowadzono następujące wartości: a = {0}, b = {1}, c = {2}", args);
